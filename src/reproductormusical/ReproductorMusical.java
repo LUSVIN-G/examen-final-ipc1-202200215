@@ -13,12 +13,17 @@ public class ReproductorMusical {
 
     public static void main(String[] args) {
 
-        Multimedia primera = new Cancion("Cancion 1", 180, "Artista 1");
-        Multimedia segunda = new Cancion("Cancion 2", 200, "Artista 2");
-        Multimedia tercera = new Cancion("Cancion 3", 240, "Artista 3");
+        Cancion primera = new Cancion("Cancion 1", 180, "Artista 1");
+        Cancion segunda = new Cancion("Cancion 2", 200, "Artista 2");
+        Cancion tercera = new Cancion("Cancion 3", 240, "Artista 3");
 
-        primera.reproducir();
-        segunda.reproducir();
-        tercera.reproducir();
+        Playlist miLista = new Playlist();
+
+        miLista.agregarCancion(primera);
+        miLista.agregarCancion(segunda);
+        miLista.agregarCancion(tercera);
+
+        miLista.mostrarPlaylist();
     }
 }
+
