@@ -24,6 +24,17 @@ public class ReproductorMusical {
         miLista.agregarCancion(tercera);
 
         miLista.mostrarPlaylist();
+
+        System.out.println();
+
+        miLista.siguiente();
+        miLista.siguiente();
+        miLista.anterior();
+        miLista.eliminarActual();
+
+        System.out.println();
+
+        miLista.mostrarPlaylist();
     }
 }
 
